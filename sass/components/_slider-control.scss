@@ -7,13 +7,17 @@
     padding: 0 20px;
     letter-spacing: 2px;
 
+    @include mq(large) {
+        justify-content: center;
+    }
+
     &__item {
         min-width: 25%;
         padding: 0 25px;
         text-align: center;
         
     }
-    
+
     i {
         color: #fff;
         font-size: 25px;

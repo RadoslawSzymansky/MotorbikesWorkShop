@@ -6,17 +6,26 @@
     background-position: center;
     background-size: cover;
 
+    @include mq(large) {
+        padding: 25px;
+    }
+
     .header__logo {
         display: flex;
         align-items: center;
         justify-content: flex-start;;
         width: 100%;
-        font-size: 18px;
+        font-size: 12px;
         text-shadow: black 0px 0px 10px;
-        
+
+        @include mq(small) {
+            font-size: 11px;
+        }
+
         &--text {
             padding: 0 20px;
             font-weight: 200;
+            
             &-bold {
                 font-weight: 800;
             }
@@ -28,6 +37,9 @@
         padding: 10px;
         background-color: #fff;
         max-width: 90px;
+        @include mq(large) {
+            max-width: 50px;
+        }
     }
 
     .header__content {
@@ -35,14 +47,40 @@
         .text {
             font-size: 52px;
             padding: 35px 0;
+
+            @include mq(large) {
+                font-size: 42px;
+            }
+
+            @include mq(medium) {
+                margin-top: 0px;
+                padding: 0;
+                font-size: 26px;
+                margin-bottom: 20px;;
+            }
+
+            @include mq(small) {
+                font-size: 22px;
+            }
+
             &--offer {
                 font-weight: bold;
+
             }
         }
         .text-camel {
             font-size: 42px;
             padding: 5px 0;
             font-weight: 200;
+
+            @include mq(large) {
+                font-size: 32px;
+            }
+
+            @include mq(medium) {
+                font-size: 22px;
+            }
+
         }
     }
 
@@ -51,6 +89,10 @@
         margin-top: 25px;
         font-size: 12px;
         line-height: 2.1;
+        @include mq(medium) {
+            font-size: 10px;
+            text-align: justify;
+        }
     }
 
     .text--offer {
