@@ -1,11 +1,16 @@
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
+    position: relative;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 10px #000
 
 }
@@ -20,4 +25,8 @@ p {
     &--bold {
         font-weight: bold;
     }
+}
+
+ul {
+    list-style: none;
 }

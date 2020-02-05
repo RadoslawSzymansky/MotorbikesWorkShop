@@ -1,0 +1,45 @@
+.menu {
+    position: fixed;
+    width: 220px;
+    background-color: rgb(0, 0, 0);
+    opacity: .9;
+    color: #fff;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+    line-height: 2;
+    font-size: 12px;
+    text-align: right;
+
+    @include mq(medium) {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    &__link {
+        cursor: pointer;
+        margin-bottom: 5px;
+        transition: .2s;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    &__contact {
+        margin-top: 150px;
+        i {
+            padding-left: 15px;
+        }
+    }
+}

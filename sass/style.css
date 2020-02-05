@@ -4229,14 +4229,28 @@ html {
   padding: 10px;
 }
 
+.wrapper .container {
+  padding-right: 220px;
+}
+
+@media (max-width: 800px) {
+  .wrapper .container {
+    padding-right: 10px;
+  }
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
   text-shadow: 0 0 10px #000;
 }
 
@@ -4250,6 +4264,10 @@ p {
 
 .text--bold {
   font-weight: bold;
+}
+
+ul {
+  list-style: none;
 }
 
 .header {
@@ -4432,5 +4450,55 @@ p {
 .slider-control i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.menu {
+  position: fixed;
+  width: 220px;
+  background-color: black;
+  opacity: .9;
+  color: #fff;
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+  line-height: 2;
+  font-size: 12px;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.menu__title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.menu__link {
+  cursor: pointer;
+  margin-bottom: 5px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.menu__link:hover {
+  font-weight: bold;
+}
+
+.menu__contact {
+  margin-top: 150px;
+}
+
+.menu__contact i {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */
