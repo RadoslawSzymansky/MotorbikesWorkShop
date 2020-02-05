@@ -4,6 +4,11 @@
     padding: 10px;
 }
 
+.container-large {
+    max-width: 1240px; 
+    margin: 0 auto;
+}
+
 .opened .wrapper {
     .container {
         padding-right: 220px;

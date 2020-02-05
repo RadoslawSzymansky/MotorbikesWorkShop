@@ -1,0 +1,17 @@
+.section {
+    background-color: #000;
+    color: #fff;
+    min-height: 200px;
+    padding: 0 10px;
+    &__image {
+
+    }
+    &__image--wrapper {
+        
+    }
+    &__image {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+}

@@ -4229,6 +4229,11 @@ html {
   padding: 10px;
 }
 
+.container-large {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .opened .wrapper .container {
   padding-right: 220px;
 }
@@ -4405,7 +4410,7 @@ ul {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: .15;
+  opacity: .3;
   z-index: -1;
 }
 
@@ -4563,5 +4568,18 @@ ul {
 
 .opened .burger__item:nth-child(3) {
   display: none;
+}
+
+.section {
+  background-color: #000;
+  color: #fff;
+  min-height: 200px;
+  padding: 0 10px;
+}
+
+.section__image {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
