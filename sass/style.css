@@ -4229,12 +4229,12 @@ html {
   padding: 10px;
 }
 
-.wrapper .container {
+.opened .wrapper .container {
   padding-right: 220px;
 }
 
 @media (max-width: 800px) {
-  .wrapper .container {
+  .opened .wrapper .container {
     padding-right: 10px;
   }
 }
@@ -4454,6 +4454,16 @@ ul {
 
 .menu {
   position: fixed;
+  right: -1000px;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #fff;
+}
+
+.opened .menu {
+  position: fixed;
   width: 220px;
   background-color: black;
   opacity: .9;
@@ -4469,13 +4479,13 @@ ul {
 }
 
 @media (max-width: 800px) {
-  .menu {
+  .opened .menu {
     width: 100%;
     text-align: center;
   }
 }
 
-.menu__title {
+.opened .menu__title {
   margin-top: 50px;
   margin-bottom: 20px;
   font-weight: 800;
@@ -4483,22 +4493,75 @@ ul {
   line-height: 1.2;
 }
 
-.menu__link {
+.opened .menu__link {
   cursor: pointer;
   margin-bottom: 5px;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-.menu__link:hover {
+.opened .menu__link:hover {
   font-weight: bold;
 }
 
-.menu__contact {
+.opened .menu__contact {
   margin-top: 150px;
 }
 
-.menu__contact i {
+.opened .menu__contact i {
   padding-left: 15px;
+}
+
+.burger {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: none;
+  cursor: pointer;
+  padding: 2px;
+  z-index: 10000;
+}
+
+.burger__item {
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.burger:hover .burger__item {
+  background-color: #666;
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+}
+
+.opened .burger {
+  right: 35px;
+}
+
+.opened .burger__item {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 0px;
+  width: 3px;
+  height: 25px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.opened .burger__item:nth-child(2) {
+  position: absolute;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 2px;
+}
+
+.opened .burger__item:nth-child(3) {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
