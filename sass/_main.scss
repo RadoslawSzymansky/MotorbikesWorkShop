@@ -1,0 +1,24 @@
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 10px #000;
+
+
+}
+.text {
+    color: #fff;
+
+    &-camel {
+        &::first-letter {
+            font-weight: bold;
+        }
+    }
+    &--bold {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,26 @@
+.slider-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-left: auto;
+    padding: 0 20px;
+    letter-spacing: 2px;
+
+    &__item {
+        min-width: 25%;
+        padding: 0 25px;
+        text-align: center;
+        
+    }
+    
+    i {
+        color: #fff;
+        font-size: 25px;
+        transition: .2s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
