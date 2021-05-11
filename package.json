@@ -36,7 +36,7 @@
     "lcid": "^1.0.0",
     "load-json-file": "^1.1.0",
     "loud-rejection": "^1.6.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "meow": "^3.7.0",
     "map-obj": "^1.0.1",
     "mime-db": "^1.43.0",
